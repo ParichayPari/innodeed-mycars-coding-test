@@ -13,13 +13,13 @@ const breakPoints = [
     showArrows: false,
   },
   {
-    width: 550,
+    width: 600,
     itemsToShow: 2,
     itemsToScroll: 2,
     showArrows: false,
     pagination: false,
   },
-  { width: 768, itemsToShow: 4, pagination: false },
+  { width: 768, itemsToShow: 3, pagination: false },
 ];
 
 function Volvo() {
@@ -28,7 +28,7 @@ function Volvo() {
       <div>
         <CarouselContainer>
           <Carousel
-            itemsToScroll={3}
+            itemsToScroll={2}
             breakPoints={breakPoints}
             infiniteLoop={false}
           >
@@ -48,7 +48,7 @@ function Volvo() {
                     className="volvo__img"
                     src={item.imageUrl}
                     alt={index}
-                    width="300px"
+                    width="350px"
                     height="100%"
                   />
                   <LearnContainer>
